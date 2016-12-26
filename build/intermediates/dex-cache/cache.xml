@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/vibindas/works/Android/testApp/PinLockView/pinlockview/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="98aa611a7c5cba46cfd8244c901db1ffc2dc4ec6">
+        <dex dex="/home/vibindas/works/Android/testApp/PinLockView/app/build/intermediates/pre-dexed/debug/classes_82a251af0db2b763be99ed6c7893e7d0526e3c90.jar" />
+    </item>
+
+</items>
