@@ -28,6 +28,7 @@ public class PinLockView extends RecyclerView {
     private Drawable mButtonBackgroundDrawable;
     private Drawable mDeleteButtonDrawable;
     private boolean mShowDeleteButton;
+    private int mButtonBackgroundDrawableResource;
 
     private IndicatorDots mIndicatorDots;
     private PinLockAdapter mAdapter;
@@ -146,6 +147,7 @@ public class PinLockView extends RecyclerView {
             mButtonSize = (int) typedArray.getDimension(R.styleable.PinLockView_keypadButtonSize, ResourceUtils.getDimensionInPx(getContext(), R.dimen.default_button_size));
             mDeleteButtonSize = (int) typedArray.getDimension(R.styleable.PinLockView_keypadDeleteButtonSize, ResourceUtils.getDimensionInPx(getContext(), R.dimen.default_delete_button_size));
             mButtonBackgroundDrawable = typedArray.getDrawable(R.styleable.PinLockView_keypadButtonBackgroundDrawable);
+            mButtonBackgroundDrawableResource = typedArray.getResourceId(R.styleable.PinLockView_keypadButtonBackgroundDrawableRes, R.drawable.number_button);
             mDeleteButtonDrawable = typedArray.getDrawable(R.styleable.PinLockView_keypadDeleteButtonDrawable);
             mShowDeleteButton = typedArray.getBoolean(R.styleable.PinLockView_keypadShowDeleteButton, true);
             mDeleteButtonPressedColor = typedArray.getColor(R.styleable.PinLockView_keypadDeleteButtonPressedColor, ResourceUtils.getColor(getContext(), R.color.greyish));
@@ -158,6 +160,7 @@ public class PinLockView extends RecyclerView {
         mCustomizationOptionsBundle.setTextSize(mTextSize);
         mCustomizationOptionsBundle.setButtonSize(mButtonSize);
         mCustomizationOptionsBundle.setButtonBackgroundDrawable(mButtonBackgroundDrawable);
+        mCustomizationOptionsBundle.setButtonBackgroundDrawableRes(mButtonBackgroundDrawableResource);
         mCustomizationOptionsBundle.setDeleteButtonDrawable(mDeleteButtonDrawable);
         mCustomizationOptionsBundle.setDeleteButtonSize(mDeleteButtonSize);
         mCustomizationOptionsBundle.setShowDeleteButton(mShowDeleteButton);

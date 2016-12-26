@@ -3,4 +3,6 @@
     <color name="white">#fff</color>
     <color name="greyish">#aaa8a8</color>
     <color name="mine_shaft">#303030</color>
+    <color name="green">#0f0</color>
+    <color name="red">#f00</color>
 </resources>
